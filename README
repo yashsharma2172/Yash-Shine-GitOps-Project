@@ -1,0 +1,138 @@
+# Enterprise GitOps Platform with AI-Powered Kubernetes Operations
+
+## Project Overview
+
+This project implements an end-to-end GitOps platform for a microservices application using GitHub Actions, Amazon EKS, ArgoCD, Datadog, and an AI-powered Kubernetes troubleshooting agent.
+
+## Technologies Used
+
+* GitHub Actions
+* Docker
+* Amazon EKS
+* Kubernetes
+* Helm
+* ArgoCD
+* Datadog
+* Python
+* OpenRouter / LLM Integration
+
+## Task 1 - Continuous Integration
+
+### Features Implemented
+
+* Automated GitHub Actions workflow
+* Source code checkout
+* Dependency installation
+* Application build
+* Docker image build
+* Docker image push to registry
+
+### Commands Used
+
+```bash
+docker build -t <image-name> .
+docker push <image-name>
+```
+
+## Task 2 - Amazon EKS
+
+### Features Implemented
+
+* EKS Cluster Creation
+* Worker Node Configuration
+* Namespace Configuration
+* Kubernetes Access Configuration
+
+### Commands Used
+
+```bash
+eksctl create cluster --name <cluster-name> --region <region>
+kubectl get nodes
+kubectl get pods -A
+```
+
+## Task 3 - GitOps with ArgoCD
+
+### Features Implemented
+
+* ArgoCD Installation
+* Git Repository Synchronization
+* Automated Application Deployment
+* Rollback Capability
+
+### Commands Used
+
+```bash
+kubectl create namespace argocd
+helm install argocd ...
+kubectl get applications -n argocd
+```
+
+## Task 4 - Datadog Observability
+
+### Features Implemented
+
+* Kubernetes Infrastructure Monitoring
+* Application Monitoring
+* Log Collection
+* Dashboard Creation
+* Alerting
+
+### Alerts Created
+
+* High CPU Alert
+* Memory Alert
+* Pod Failure Alert
+* Application Availability Alert
+
+### Dashboards Created
+
+* EKS Infrastructure Dashboard
+* Application Performance Dashboard
+* Infrastructure Utilization Dashboard
+
+## Task 5 - AI Troubleshooting Agent
+
+### Features Implemented
+
+* Kubernetes Log Collection
+* Event Collection
+* Failure Analysis
+* Root Cause Identification
+* Automated Remediation Suggestions
+
+### Scenarios Tested
+
+1. CrashLoopBackOff / Pod Restart
+2. Application Latency
+3. Deployment Failure
+
+### Run
+
+```bash
+export OPENROUTER_API_KEY=<API_KEY>
+python3 ai-agent.py
+```
+
+## Task 6 - AIOps Comparison
+
+### Comparison Areas
+
+* Traditional Monitoring
+* AI-Assisted Troubleshooting
+* Root Cause Analysis
+* Incident Resolution
+
+### Run
+
+```bash
+python3 aiops-comparison.py
+```
+
+## Screenshots
+
+All screenshots are stored in the screenshots/ directory.
+
+## Outcome
+
+Successfully implemented a complete GitOps platform with CI/CD automation, Kubernetes deployment, observability, monitoring, alerting, and AI-assisted troubleshooting.
