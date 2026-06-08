@@ -1,0 +1,17 @@
+datadog:
+  site: "datadoghq.com"
+  clusterName: "shine-cluster"
+  apiKeyExistingSecret: "datadog-secret"
+
+  logs:
+    enabled: true
+    containerCollectAll: true
+
+  apm:
+    portEnabled: true
+
+clusterChecks:
+  enabled: true
+
+orchestratorExplorer:
+  enabled: true
