@@ -8,7 +8,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/Msocial123/Shine-GitOps-Project.git
+    repoURL: https://github.com/yashsharma2172/Yash-Shine-GitOps-Project.git
     targetRevision: main
     path: Retail-chart
 
